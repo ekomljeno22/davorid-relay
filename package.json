@@ -1,0 +1,13 @@
+{
+  "name": "davorid-relay",
+  "version": "1.0.0",
+  "description": "Relay and game list for Davorid multiplayer: players on any network (eduroam, hotspots, carrier NAT) join through it.",
+  "private": true,
+  "main": "relay.js",
+  "scripts": {
+    "start": "node relay.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

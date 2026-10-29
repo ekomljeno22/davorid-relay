@@ -1,0 +1,15 @@
+# Render Blueprint: a free web service running the relay. Put the files of
+# this folder at the top of a GitHub repository, then in Render: New >
+# Blueprint > that repository. The relay's address is the service's
+# onrender.com name (players add it without https://).
+services:
+  - type: web
+    name: davorid-relay
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node relay.js
+    healthCheckPath: /health
+    envVars:
+      - key: RELAY_NAME
+        value: Davorid relay
