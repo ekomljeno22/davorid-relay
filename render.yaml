@@ -7,6 +7,8 @@ services:
     name: davorid-relay
     runtime: node
     plan: free
+    # Close to the players: relayed packets go host -> relay -> joiner.
+    region: frankfurt
     buildCommand: npm install
     startCommand: node relay.js
     healthCheckPath: /health
